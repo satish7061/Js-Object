@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object(Satish)</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crete+Round:ital@1&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Objects Questions</h1>
+
+    <h3>Qu 1. Write a program to create a function in object?</h3>
+<pre>
+  function Check(obj1){
+    obj1.setter = function () {
+      console.log(this.name);
+    }
+  }
+</pre>
+    <h3>Qu 2. Write a program to delete a parameter in a object?</h3>
+<pre>
+  function Check(obj) {
+    delete obj.rollno;
+    return obj;
+  }
+</pre>
+    <h3>Qu 3. Write a program to check whether the Package is Dream Package or not?</h3>
+ <pre>
+  function Check(obj1) {
+    if(obj1.salary>500000)
+       return "Dream";
+    else
+       return "NotDream";
+}
+</pre>
+
+    <h3>Qu 4. Write a program to check whether the Object has a parameter or not?</h3>
+<pre>
+  function Check(obj) {
+    return  obj.hasOwnProperty("name");
+   }   
+</pre>
+
+    <h3>Qu 5. Write a program to merge the Objects?</h3>
+<pre>
+  function Check(obj1,obj2) {
+    let obj3 = Object.assign(obj1,obj2);
+    return obj3;
+  }
+</pre>
+    
+    <h3>Qu 6. Write a program to find Object Multiplyer?</h3>
+<pre>
+  function Check(n,obj) {
+    obj.id  = obj.id*n;
+    obj.houseno = obj.houseno*n;
+    return obj;
+  }
+</pre>
+<h3>Qu 7. Write a program to find the sum of Object Members?</h3>
+<pre>
+  function Check(obj1) {
+    return obj1.p1+obj1.p2+obj1.p3;
+  }
+</pre>
+
+<h3>Qu 8. Write a program to check whether the Objects are same or not.?</h3>
+<pre>
+  function check(obj1,a,b) {
+    let obj_name = obj1['name'];
+    let obj_id = obj1['id'];
+    if (obj_name == a && obj_id == b)
+      return true;
+    else 
+      return false;
+ }
+</pre>
+
+</body>
+</html>
